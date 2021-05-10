@@ -651,9 +651,9 @@ h4 {
     font-size: 2rem;
     padding: 470px 5px 0px 0px;
   }
-  .cta-header {
+  /* .cta-header {
     margin-top: -205px !important;
-  }
+  } */
   .cta-item h1 {
     font-size: 1rem !important;
     max-width: 200px;
@@ -705,9 +705,13 @@ h4 {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-family: sans-serif;
-  margin-top: -530px;
-  margin-left: -450px;
+  margin-top: -550px;
+  margin-left: -500px;
   color: #fff;
+}
+.header-text h1{
+  margin-top: -420px;
+  margin-left: -300px;
 }
 .somos-text {
   position: absolute;
@@ -718,7 +722,7 @@ h4 {
   max-width: 600px;
   height: 250px;
   padding: 10px;
-  margin-top: -440px;
+  margin-top: -500px;
   margin-left: -200px;
   background-color: rgba(0, 0, 0, 0.5);
 }
@@ -753,6 +757,7 @@ h4 {
   }
   .somos-text {
     max-width: 100%;
+   margin-top: -450px;
   }
 
   .somos-item h1 {
@@ -778,10 +783,16 @@ h4 {
   }
 }
 /* slide */
+.carousel-header {
 
+
+  height:780px!important;
+
+ 
+}
 .carousel-cell {
-  height: 100% !important;
-  /* margin-top: 180px; */
+  height:550px;
+ 
 }
 
 .carousel-cell-image.flickity-lazyloaded,
@@ -823,7 +834,23 @@ h4 {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin-top: 60px;
+
+position: relative;
+
+ 
+}
+.cta-header {
+  position: relative;
+  background: #b41e3c;
+  height: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+ margin-top: -90px;
+
+
+
+ 
 }
 
 .cta-item {
@@ -1121,7 +1148,7 @@ h4 {
 
 .carousel {
   background: #f9f9f9;
-  margin-bottom: 60px;
+ 
   width: 100%;
 }
 
@@ -1155,6 +1182,8 @@ h4 {
 .reuniao h1 {
   font-size: 1.9rem;
 }
+.reuniao-item a {
+  background-color: #20CFFD!important;}
 .section-services {
   padding-top: 60px;
   padding-bottom: 120px;

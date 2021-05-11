@@ -642,15 +642,7 @@ h4 {
     margin-top: 0px !important;
   }
 
-  .image {
-    margin-top: -120px;
-    background-size: 100% 50%;
-  }
-  .image h1 {
-    line-height: 30px;
-    font-size: 2rem;
-    padding: 470px 5px 0px 0px;
-  }
+
   /* .cta-header {
     margin-top: -205px !important;
   } */
@@ -681,7 +673,37 @@ h4 {
 }
 
 /* slide quem somos */
+@media(max-width:767px){
+  .somos-titulo h1 {
+    font-size: 1rem!important;
+    
+  }
+  .titulo-sobre  {
+    font-size: 1.2rem!important;
+ 
+    text-align: center;
+ 
+  }
+  .carousel-control-prev-icon{
+    margin-top: 100px;
+  }
+  .carousel-control-next-icon{
+    margin-top: 250px;
+  }
+  .somos-titulo {
+    top:90px!important;
+    left:60px!important;
+  }
+  .text-acreditamos h1{
+    top:230px!important;
+    font-size: 1rem;
+  }
+  .carousel-inner {
+    margin-top: -10px;;
+  }
 
+
+}
 .titulo-sobre {
   position: absolute;
   font-size: 3rem;
@@ -689,10 +711,17 @@ h4 {
   text-transform: uppercase;
   font-weight: 800;
   color: #b41e3c;
-  margin-top: -23px;
+ line-height: 20px;
 }
-.somos-titulo {
+.text-acreditamos h1 {
   position: absolute;
+  text-transform: uppercase;
+  text-align: end;
+  color: #fff;
+  right: 20px;
+  top: 450px;
+
+
 }
 .titulo-service {
   font-size: 1.2rem;
@@ -713,6 +742,15 @@ h4 {
   margin-top: -420px;
   margin-left: -300px;
 }
+.somos-titulo {
+  position: absolute;
+  left: 200px;
+  top: 140px;
+}
+.somos-titulo h1 {
+  color: #fff;
+  font-size: 3rem;
+}
 .somos-text {
   position: absolute;
   display: flex;
@@ -722,15 +760,21 @@ h4 {
   max-width: 600px;
   height: 250px;
   padding: 10px;
-  margin-top: -500px;
-  margin-left: -200px;
+  right: 200px;
+  top: 280px;
   background-color: rgba(0, 0, 0, 0.5);
 }
+.carousel-item {
+  position: relative;
+}
+
 .somos-text h2 {
+
   font-family: sans-serif;
   text-transform: uppercase;
   font-style: italic;
   color: #fff;
+
   font-weight: bold;
   font-size: 2.5rem;
 }
@@ -752,25 +796,22 @@ h4 {
   .cta-whatapp {
     padding-bottom: 10px;
   }
-  .somos {
-    width: 100% !important;
-  }
-  .somos-text {
-    max-width: 100%;
-   margin-top: -450px;
-  }
 
-  .somos-item h1 {
-    margin-left: -110px;
-  }
+
+.somos-text{
+  top:130px;
+  right: 20px;
+  
+}
+
   .somos-text h2 {
-    font-size: 1.5rem;
+    font-size: 0.8rem;
   }
   .somos-text p {
     font-family: volk;
     color: #fff;
-    line-height: 30px;
-    font-size: 1rem;
+    line-height: 20px;
+    font-size: 0.8rem;
     width: 280px;
     text-align: center;
     margin-left: 70px;
@@ -846,7 +887,7 @@ position: relative;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
- margin-top: -90px;
+
 
 
 
@@ -1045,6 +1086,12 @@ position: relative;
 }
 
 @media (max-width: 767px) {
+  .carousel-header img  {
+width:100%;
+
+  
+}
+
   .mobile-none {
     display: none;
   }
@@ -3315,4 +3362,7 @@ textarea {
   }
 }
 
-/*  */
+/*  carousel*/
+.carousel-item img {
+  padding-top: 90px;;
+}

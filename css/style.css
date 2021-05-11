@@ -2365,9 +2365,31 @@ width:100%;
   font-size: 1.2rem;
   margin: 0 auto;
   max-width: 600px;
+
+}
+.page-item li {
+  list-style: none;
+  text-align: initial;
+}
+.page-item ul li:before {
+  content: '➤';
+color: #b41e3c;
+  padding: 10px;;
+}
+.page-item .sub-list  li:before {
+  content: '►'!important;
+  color: #1d1e23!important;
+    padding: 10px;;
 }
 .page-item h2 {
   color: #b41e3c;
+  font-family: chunkfive;
+  text-align: initial;
+  margin: 40px;
+}
+.page-item h3 {
+  color: #b41e3c;
+  font-size: 1.1rem;
   font-family: chunkfive;
   text-align: initial;
   margin: 40px;
@@ -2392,7 +2414,7 @@ width:100%;
   margin: 40px;
   font-size: 1rem;
   line-height: 1.5rem;
-  list-style: none;
+ 
 }
 .links:hover {
   transform: scale(1.1);

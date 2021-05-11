@@ -2,8 +2,8 @@
   margin: 0;
   padding: 0;
 }
-body {
-  /* background: #f9f9f9 !important; */
+.container {
+  max-width:95%!important;
 }
 
 ::-webkit-scrollbar {
@@ -654,9 +654,6 @@ h4 {
     margin-left: 5px;
   }
 
-  .cta-item a {
-    font-size: 0.7rem !important;
-  }
   .cta-whatapp {
     flex-direction: column;
   }
@@ -858,13 +855,13 @@ h4 {
 .cta-rodape a {
   width: 140px;
   padding: 7px 0px !important;
-  font-size: 0.8rem !important;
+  font-size: 0.9rem !important;
   background-color: #20CFFD!important;
 }
 .ligar-menu a {
   width: 120px;
   padding: 7px 4px !important;
-  font-size: 0.8rem !important;
+  font-size: 0.9rem !important;
 }
 
 .cta-menu {
@@ -1580,7 +1577,7 @@ width:100%;
   margin-left: 50px;
 }
 .ligar-menu {
-  margin-left: 55px;
+  margin-left: 70px;
   margin-top: 15px;
 }
 .end h4 {
@@ -1588,7 +1585,7 @@ width:100%;
 }
 .endereco p {
   font-family: chunkfive;
-  font-size: 0.9rem !important;
+  font-size: 1.2rem !important;
   max-width: 200px;
   margin-left: 60px;
 }
@@ -2175,6 +2172,8 @@ width:100%;
   }
 }
 .redes-footer {
+ 
+  margin-left: -320px;;
   margin-bottom: 55px;
 }
 .endereco img{
@@ -2201,6 +2200,7 @@ width:100%;
   align-items: flex-start;
   font-family: folk;
   font-weight: bold !important;
+  font-size: 1.2rem;
 }
 
 .link a:hover {
@@ -2211,7 +2211,7 @@ width:100%;
 
 @media (max-width: 768px) {
   .endereco {
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
   }
   .link {
@@ -2221,8 +2221,12 @@ width:100%;
     justify-content: center;
     margin: 50px auto;
   }
+  .brand-footer {
+margin-left: 40px;
+  }
   .brand img {
     max-width: 160px !important;
+    
   }
   .adress {
     flex-direction: column;
@@ -2816,7 +2820,7 @@ h2 {
 .redes-footer {
   display: flex;
   margin-top: 20px;;
-  margin-left: -280px;
+ 
   color: #fff;
   font-family: folk;
   font-weight: 300 !important;

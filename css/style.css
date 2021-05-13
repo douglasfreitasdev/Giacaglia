@@ -116,7 +116,7 @@ h4 {
   position: absolute;
   top: 50%;
   margin-top: -14px;
-  right: 50px;
+  right: 100px;
   display: none;
   cursor: pointer;
 }
@@ -638,6 +638,10 @@ h4 {
 
 /* media header */
 @media (max-width: 767px) {
+
+
+
+
   .flickity-prev-next-button.previous,
   .flickity-prev-next-button.next {
     margin-top: 0px !important;
@@ -657,51 +661,60 @@ h4 {
   .cta-whatapp {
     flex-direction: column;
   }
-  .titulo-service {
-    text-align: center;
-  }
+ 
   .titulo {
     text-align: center;
+    margin:30px auto;
   }
   .titulo-fazemos,
   .titulo-unidades {
     text-align: center !important;
     font-size: 0.8rem !important;
   }
+
 }
 
 /* slide quem somos */
 @media(max-width:767px){
+  .titulo-service{
+    margin-top: 100px!important;
+    text-align: center !important;
+    font-size: 0,8rem!important;
+    margin-left: -30px!important;
+  
+  }
+
   .somos-titulo h1 {
-    font-size: 1rem!important;
+    font-size: 1.4rem!important;
     
   }
   .titulo-sobre  {
     font-size: 1.2rem!important;
- 
+ line-height: 5px!important;
     text-align: center;
  
   }
   .carousel-control-prev-icon{
-    margin-top: 100px;
+    margin-top: -160px;
   }
-  .carousel-control-next-icon{
-    margin-top: 250px;
-  }
+
   .somos-titulo {
-    top:90px!important;
+    margin-top:-30px!important;
     left:60px!important;
   }
   .text-acreditamos h1{
-    top:230px!important;
-    font-size: 1rem;
+    top:290px!important;
+    font-size: 1.4rem;
+   
   }
-  .carousel-inner {
-    margin-top: -10px;;
+  .carousel-inner img {
+   max-height: 350px;;
+   margin-top: 80px!important;
+   
   }
-
 
 }
+
 .titulo-sobre {
   position: absolute;
   font-size: 3rem;
@@ -721,10 +734,7 @@ h4 {
 
 
 }
-.titulo-service {
-  font-size: 1.2rem;
-  text-align: center;
-}
+
 .somos-item h1 {
   position: absolute;
   font-size: 3rem;
@@ -742,12 +752,12 @@ h4 {
 }
 .somos-titulo {
   position: absolute;
-  left: 200px;
+  left: 100px;
   top: 140px;
 }
-.somos-titulo h1 {
-  color: #fff;
-  font-size: 3rem;
+.somos-titulo span {
+ 
+  font-size: 3.3rem;
 }
 .somos-text {
   position: absolute;
@@ -755,16 +765,14 @@ h4 {
   flex-direction: column;
   justify-content: end;
   align-items: flex-end;
-  max-width: 600px;
-  height: 250px;
+  max-width: 700px;
+  max-height: 100%;
   padding: 10px;
   right: 200px;
-  top: 280px;
+  top: 270px;
   background-color: rgba(0, 0, 0, 0.5);
 }
-.carousel-item {
-  position: relative;
-}
+
 
 .somos-text h2 {
 
@@ -779,8 +787,8 @@ h4 {
 .somos-text p {
   font-family: volk;
   color: #fff;
-  line-height: 30px;
-  font-size: 1.4rem;
+  line-height: 45px;
+  font-size: 1.7rem;
   text-align: end;
   margin-right: 25px;
   box-sizing: none;
@@ -791,14 +799,19 @@ h4 {
 }
 
 @media (max-width: 767px) {
+ 
   .cta-whatapp {
-    padding-bottom: 10px;
+   padding-bottom: 10px;
+ 
+    height: 140px;;
   }
-
+.reuniao-item a{
+  font-size: 0.8rem!important;
+}
 
 .somos-text{
-  top:130px;
-  right: 20px;
+top: 150px;;
+  right: 10px;
   
 }
 
@@ -830,7 +843,11 @@ h4 {
  
 }
 .carousel-cell {
-  height:550px;
+  width: 25%;
+  height: 550px;
+
+  border-radius: 5px;
+  counter-increment: carousel-cell;
  
 }
 
@@ -842,6 +859,12 @@ h4 {
 .carousel-cell-image.flickity-lazyloaded,
 .carousel-cell-image.flickity-lazyerror {
   opacity: 1;
+}
+@media (max-width:767px) {
+.carousel-cell{
+ width: 86%!important;
+
+}
 }
 
 /* CTA Whatsapp */
@@ -871,7 +894,7 @@ h4 {
   background: #b41e3c;
   height: 100px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 
 position: relative;
@@ -883,7 +906,7 @@ position: relative;
   background: #b41e3c;
   height: 100px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 
 
@@ -894,6 +917,7 @@ position: relative;
 
 .cta-item {
   display: flex;
+  margin-right: 20px;;
 }
 
 .cta-item img {
@@ -913,7 +937,7 @@ position: relative;
   text-decoration: none;
   padding: 5px 20px;
   border-radius: 5px;
-  margin-left: -10px;
+  margin-right: -2px;
 
   background: #2ad469;
   box-shadow: 0px 7px 14px rgba(0, 0, 0, 0.25), 0 4px 4px rgba(0, 0, 0, 0.22);
@@ -978,13 +1002,16 @@ position: relative;
   color: #fff;
 }
 .cinco h1 {
-  margin-top: -10px;
+  margin-top: -12px;
+  margin-bottom: -8px;;
 }
 .quatro h1 {
   margin-top: -15px;
 }
 .cinco p {
-  font-size: 0.6rem !important;
+  font-size: 0.7rem !important;
+  text-align: center;
+
 }
 .diagrama-item p {
   font-family: chunkfive;
@@ -1120,9 +1147,9 @@ width:100%;
   color: #b41e3c;
 }
 /* servicos */
-.titulo-service h1 {
+.titulo-service  {
   font-family: chunkfive !important;
-  font-size: 3rem !important;
+  font-size: 3rem ;
   margin: 20px 0px 0px 60px;
 }
 .titulo-service span {
@@ -1134,6 +1161,7 @@ width:100%;
 
   background: #f9f9f9;
   margin: 60px 40px;
+  /* margin-left: -80px; */
   border: none !important;
 }
 .card-body {
@@ -1225,6 +1253,7 @@ width:100%;
   color: #b41e3c;
 }
 .reuniao h1 {
+
   font-size: 1.9rem;
 }
 .reuniao-item a {
@@ -1358,20 +1387,33 @@ width:100%;
   .empresa {
     margin-bottom: -60px;
   }
+  .cta-item a {
+    font-size: 0.8rem;
+  }
+  .cta-item img {
+    width:30px;;
+  }
+  .cta-item h1{
+    font-size:1rem!important;
+  }
+  .reuniao-item a {
+    margin-left: 30px;;
+  }
   .flickity-slider {
     left: 5%;
   }
   .titulo-unidades {
-    margin: 30px 0px 30px 10px;
+    margin: -40px 0px 20px 10px;
+    font-size: 2rem!important;
   }
   .titulo-fazemos h1 {
     margin: 40px 0px 40px 0px;
+    font-size: 2rem!important;
   }
-  .titulo-service h1 {
-    margin: 0px;
-  }
+
   .end {
     align-items: center;
+    line-height: 50px;
   }
   .end h5,
   .end h4,
@@ -1387,7 +1429,8 @@ width:100%;
     margin-left: 10px;
   }
   .carousel-cell {
-    margin-left: 80px;
+    margin-left: 100px;
+    margin-bottom: 40px;;
   }
 }
 /* icons team */
@@ -1570,8 +1613,9 @@ width:100%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: start;
+  line-height: 35px;
 }
 .endereco h4 {
   margin-left: 50px;
@@ -1777,6 +1821,7 @@ width:100%;
 }
 
 @media (max-width: 767px) {
+ 
   .hex-time {
     overflow: hidden;
     padding-bottom: 50px;
@@ -2182,12 +2227,14 @@ width:100%;
 .link {
   display: flex;
   flex-wrap: wrap;
+  line-height: 35px;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: center;
+  align-content: center;
+  justify-content: space-evenly;
 }
 .link h5 {
-  margin-top: 50px;
+  margin-top: 110px;
   font-family: chunkfive;
   color: #000 !important;
 }
@@ -2284,9 +2331,13 @@ margin-left: 40px;
     align-items: center;
     margin: 0auto;
   }
+  .carousel-inner{
+    margin-bottom: -200px;;
+  }
 }
 .carousel-inner {
   flex-direction: row;
+height: 630px;
 }
 
 /* paginas servico */
@@ -3391,5 +3442,10 @@ textarea {
 
 /*  carousel*/
 .carousel-item img {
-  padding-top: 90px;;
+  position: relative;
+  height: 100vh!important;
+  width: 100vw!important;
+  margin-top: 90px;
+ 
+  background-size: cover!important;
 }
